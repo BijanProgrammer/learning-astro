@@ -3,15 +3,33 @@ import SocialLink from './SocialLink.astro';
 ---
 
 <footer>
-    <SocialLink link="https://github.com/bijanprogrammer" text="GitHub" />
-    <SocialLink link="https://www.linkedin.com/in/bijanprogrammer/" text="LinkedIn" />
-    <SocialLink link="https://twitter.com/bijanprogrammer" text="Twitter" />
+    <small class="copyright"> Copyright &copy; 2023 BijanProgrammer.com</small>
+
+    <nav aria-label="Social">
+        <ul>
+            <li><SocialLink link="https://github.com/bijanprogrammer" text="GitHub" /></li>
+            <li><SocialLink link="https://www.linkedin.com/in/bijanprogrammer/" text="LinkedIn" /></li>
+            <li><SocialLink link="https://twitter.com/bijanprogrammer" text="Twitter" /></li>
+        </ul>
+    </nav>
 </footer>
 
-<style>
+<style lang="scss">
     footer {
         display: flex;
-        gap: 1rem;
-        margin-top: 2rem;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 2rem;
+
+        padding-block: 2rem;
+
+        nav {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+        }
     }
 </style>
