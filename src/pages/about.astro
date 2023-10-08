@@ -1,6 +1,7 @@
 ---
 import '@fontsource/lato';
 import '../styles/global.scss';
+import Header from '../components/Header.astro';
 
 const pageTitle = 'About Me';
 
@@ -40,15 +41,7 @@ const textCase = 'uppercase';
     </head>
 
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="/blog/">Blog</a></li>
-                </ul>
-            </nav>
-        </header>
+        <Header />
 
         <main>
             <h1>{pageTitle}</h1>
