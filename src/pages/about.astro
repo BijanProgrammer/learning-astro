@@ -1,4 +1,7 @@
 ---
+import '@fontsource/lato';
+import '../styles/global.scss';
+
 const pageTitle = 'About Me';
 
 const identity = {
@@ -25,8 +28,8 @@ const textCase = 'uppercase';
         <title>{pageTitle}</title>
         <style define:vars={{skillColor, fontWeight, textCase}}>
             h1 {
-                color: purple;
-                font-size: 4rem;
+                color: var(--color-primary);
+                font-size: 6.4rem;
             }
             .skill {
                 color: var(--skillColor);
